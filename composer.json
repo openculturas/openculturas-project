@@ -1,0 +1,103 @@
+{
+    "name": "openculturas/openculturas-project",
+    "description": "The OpenCulturas project template.",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.openculturas.org",
+    "support": {
+        "docs": "https://www.openculturas.org/docs",
+        "chat": "https://www.openculturas.org/chat"
+    },
+    "authors": [
+        {
+            "name": "Stefan Auditor",
+            "email": "stefan.auditor@cowain.de"
+        },
+        {
+            "name": "Tobias Bähr",
+            "email": "tobias.baehr@cowain.de"
+        },
+        {
+            "name": "Meike Jung",
+            "email": "meike.jung@cowain.de"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/core-composer-scaffold": "^9.2",
+        "drupal/core-project-message": "^9.2",
+        "drupal/core-recommended": "^9.2",
+        "drush/drush": "^10.6",
+        "openculturas/openculturas-distribution": "dev-main"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "source",
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": ["homepage", "support"],
+            "post-create-project-cmd-message": [
+                "<bg=magenta;fg=white>                                                               </>",
+                "<bg=magenta;fg=white>  Congratulations, you’ve installed the Openculturas codebase  </>",
+                "<bg=magenta;fg=white>  from the openculturas/openculturas-project template!         </>",
+                "<bg=magenta;fg=white>                                                               </>",
+                ""
+            ]
+        },
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+        }
+    }
+}
