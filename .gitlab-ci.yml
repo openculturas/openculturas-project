@@ -4,8 +4,9 @@ stages:
 variables:
   REPOSITORY_NAME: "lvsn/openculturas-container"
 
-build:container:
+build:
   only:
     - main
     - tags
-  trigger: $REPOSITORY_NAME
+  script:
+    - echo "container build has been triggered"
