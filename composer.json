@@ -88,10 +88,10 @@
         "drupal-core-project-message": {
             "include-keys": ["homepage", "support"],
             "post-create-project-cmd-message": [
-                "<bg=magenta;fg=white>                                                               </>",
-                "<bg=magenta;fg=white>  Congratulations, you’ve installed the Openculturas codebase  </>",
-                "<bg=magenta;fg=white>  from the openculturas/openculturas-project template!         </>",
-                "<bg=magenta;fg=white>                                                               </>",
+                "<fg=magenta>                                                               </>",
+                "<fg=magenta>  Congratulations, you’ve installed the OpenCulturas codebase  </>",
+                "<fg=magenta>  from the openculturas/openculturas-project template!         </>",
+                "<fg=magenta>                                                               </>",
                 ""
             ]
         },
