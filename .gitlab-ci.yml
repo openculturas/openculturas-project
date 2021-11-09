@@ -7,6 +7,8 @@ build:container:
   only:
     - main
     - tags
+  variables:
+    CI_COMMIT_REF_NAME: $CI_COMMIT_REF_NAME
   trigger:
     project: lvsn/openculturas-container
     branch: main
