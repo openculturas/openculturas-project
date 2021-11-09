@@ -3426,12 +3426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/openculturas/openculturas-distribution.git",
-                "reference": "ecc779c16c848e727eb250aca39227ee414d6b94"
+                "reference": "9a1b247ada0063f7ae5988d67a8587e6c0b914de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openculturas/openculturas-distribution/zipball/ecc779c16c848e727eb250aca39227ee414d6b94",
-                "reference": "ecc779c16c848e727eb250aca39227ee414d6b94",
+                "url": "https://api.github.com/repos/openculturas/openculturas-distribution/zipball/9a1b247ada0063f7ae5988d67a8587e6c0b914de",
+                "reference": "9a1b247ada0063f7ae5988d67a8587e6c0b914de",
                 "shasum": ""
             },
             "require": {
@@ -3467,7 +3467,7 @@
                 "issues": "https://github.com/openculturas/openculturas-distribution/issues",
                 "source": "https://github.com/openculturas/openculturas-distribution/tree/main"
             },
-            "time": "2021-11-09T12:02:50+00:00"
+            "time": "2021-11-09T12:40:56+00:00"
         },
         {
             "name": "pear/archive_tar",
