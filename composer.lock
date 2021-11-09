@@ -3426,12 +3426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/openculturas/openculturas-distribution.git",
-                "reference": "18fd85e7a9715908508de1a38462ac89bb8bfca4"
+                "reference": "ecc779c16c848e727eb250aca39227ee414d6b94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openculturas/openculturas-distribution/zipball/18fd85e7a9715908508de1a38462ac89bb8bfca4",
-                "reference": "18fd85e7a9715908508de1a38462ac89bb8bfca4",
+                "url": "https://api.github.com/repos/openculturas/openculturas-distribution/zipball/ecc779c16c848e727eb250aca39227ee414d6b94",
+                "reference": "ecc779c16c848e727eb250aca39227ee414d6b94",
                 "shasum": ""
             },
             "require": {
@@ -3467,7 +3467,7 @@
                 "issues": "https://github.com/openculturas/openculturas-distribution/issues",
                 "source": "https://github.com/openculturas/openculturas-distribution/tree/main"
             },
-            "time": "2021-11-04T11:13:36+00:00"
+            "time": "2021-11-09T12:02:50+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -7046,6 +7046,7 @@
                 "issues": "https://github.com/webmozart/path-util/issues",
                 "source": "https://github.com/webmozart/path-util/tree/2.3.0"
             },
+            "abandoned": "symfony/filesystem",
             "time": "2015-12-17T08:42:14+00:00"
         }
     ],
