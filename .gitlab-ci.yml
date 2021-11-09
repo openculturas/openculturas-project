@@ -1,12 +1,15 @@
 stages:
   - build
+  - test
+  - deploy
 
 variables:
   REPOSITORY_NAME: "lvsn/openculturas-container"
 
-build:
+build:container:
   only:
     - main
     - tags
-  script:
-    - echo "container build has been triggered"
+  trigger:
+    project: openculturas/openculturas-container
+    branch: main
