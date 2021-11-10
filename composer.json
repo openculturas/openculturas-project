@@ -39,6 +39,8 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drush/drush": "^10.6",
+        "npm-asset/jquery-ui-touch-punch": "^0.2.3",
+        "oomphinc/composer-installers-extender": "^2.0",
         "openculturas/openculturas-distribution": "dev-main"
     },
     "conflict": {
@@ -56,12 +58,18 @@
                 "web-root": "web/"
             }
         },
+	"installer-types": [
+            "npm-asset",
+	    "bower-asset"
+	],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "vendor:npm-asset",
+                "vendor:bower-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
