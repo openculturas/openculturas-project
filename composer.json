@@ -58,10 +58,10 @@
                 "web-root": "web/"
             }
         },
-	"installer-types": [
+        "installer-types": [
             "npm-asset",
-	    "bower-asset"
-	],
+            "bower-asset"
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
@@ -94,13 +94,18 @@
             ]
         },
         "drupal-core-project-message": {
-            "include-keys": ["homepage", "support"],
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
             "post-create-project-cmd-message": [
                 "<fg=magenta>                                                               </>",
                 "<fg=magenta>  Congratulations, you’ve installed the OpenCulturas codebase  </>",
                 "<fg=magenta>  from the openculturas/openculturas-project template!         </>",
                 "<fg=magenta>                                                               </>",
-                ""
+                "",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
             ]
         },
         "enable-patching": true,
