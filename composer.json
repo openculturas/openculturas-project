@@ -8,6 +8,7 @@
         "docs": "https://www.openculturas.org/docs",
         "chat": "https://www.openculturas.org/chat"
     },
+    "abandoned": "drupal/openculturas_project",
     "authors": [
         {
             "name": "Stefan Auditor",
